@@ -1,116 +1,148 @@
-.container {
-  padding: 0 2rem;
+.container{
+  width: 100%;
+  border: 2px hidden red;
+  min-height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  padding: 0 0 30px;
+  background-image: url('/assets/home/background-home-mobile.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.homeContent{
+  width: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 70vh;
   justify-content: center;
-  align-items: center;
 }
 
-.footer {
+.section{
+  width: 90%;
+  height: 100%;
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  margin:0 auto;
+  border: 2px hidden white;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.headerTexts{
+  width: 100%;
+  padding: 20px 0;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
+.paragraphOne, .paragraphTwo{
+  color: rgba(255,255,255,0.7);
+  font-weight: 300;
+  font-size: 20px;
   line-height: 1.5;
-  font-size: 1.5rem;
+  width: 100%;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.paragraphOne{
+  margin:0 0 20px;
 }
 
-.grid {
+.paragraphOne span{
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: white
+}
+
+.paragraphTwo{
+  margin-bottom: 20px;
+}
+
+.exploreContainer{
+  width: 100%;
+}
+
+.explore{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 30px auto 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  align-items: center;
+  border: 2px hidden blue;
+  background-color: white;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.explore h1{
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Sorts Mill Goudy', serif;
+  text-transform: uppercase;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+@media(min-width: 778px){
+
+  .container{
+    background-image: url('/assets/home/background-home-tablet.jpg');
+  }
+
+  .section{
+    margin-top: 50px;
+  }
+
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
+@media(min-width: 992px){
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
+    .container {
+      background-image: url('/assets/home/background-home-desktop.jpg')
+    }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
+  .homeContent {
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+    min-height: 80vh;
+
+  }
+
+  .section{
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 30px;
+  }
+
+  .headerTexts{
+    text-align: left;
+    width: 70%;
+    height: 100%;
+    border: 2px hidden green;
+    display:flex;
     flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 0 0;
+
+  }
+
+  .exploreContainer{
+    width: 100%;
+    border: 2px hidden blue;
+  }
+
+  .explore {
+    margin: 30px auto 0px;
+  }
+
+    .paragraphTwo {
+      margin-bottom: 0px;
+      font-size: 18px;
+    }
+
+  .paragraphOne {
+    font-size: 24px;
+    margin: 0 0 5px;
+  }
+
+  .paragraphOne span {
+    font-size: 40px;
+    letter-spacing: 5px;  
   }
 }

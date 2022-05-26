@@ -1,0 +1,7 @@
+.main{
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  border: 2px hidden green;
+}
+

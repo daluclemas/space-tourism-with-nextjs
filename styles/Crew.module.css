@@ -1,0 +1,218 @@
+.container{
+  border: 2px hidden red;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/assets/crew/background-crew-mobile.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+}
+
+.crewContainer{
+  border: 1px hidden green;
+  width: 90%;
+  margin: auto;
+}
+
+.crew{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.crew h1{
+  width: 100%;
+  line-height: 1.5;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  word-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.crew h1 span{
+  letter-spacing: 1.5px;
+}
+
+.crewInfo{
+  border: 2px hidden blue;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.crewDetails, .crewImages{
+  width: 100%;
+  border: 2px hidden yellow;
+  margin-bottom: 20px;
+}
+
+.crewDetails{
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.dots{
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.dots li{
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255,255,255,0.1);
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+
+.aboutCrewMember{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.nameAndOccupation{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.nameAndOccupation h4, .nameAndOccupation h2{
+  width: 100%;
+  font-family: 'Sorts Mill Goudy', serif;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.nameAndOccupation h4{
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+}
+
+.nameAndOccupation h2{
+  margin-bottom: 10px;
+}
+
+.aboutCrewMember p::first-letter{
+  text-transform: uppercase;
+}
+
+.aboutCrewMember p{
+  width: 100%;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.crewImages{
+  width: 100%;
+}
+
+.imageContainer {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+.imageContainer>span {
+  border: 10px hidden green !important;
+  width: 100% !important;
+  height: 100% !important;
+
+}
+
+
+@media(min-width: 778px){
+  .container{
+    background-image: url('/assets/crew/background-crew-tablet.jpg');
+  }
+
+  .crewContainer{
+    margin-top: 50px;
+  }
+
+  .crew h1{
+    font-size: 24px;
+  }
+
+  .dots li {
+    width: 15px;
+    height: 15px;
+  }
+
+  .imageContainer {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+
+@media(min-width: 992px){
+  .container{
+    background-image:url('/assets/crew/background-crew-desktop.jpg');
+  }
+
+  .crewContainer{
+    margin-top: 60px;
+  }
+
+  .crew h1{
+    text-align: left;
+  }
+
+  .crewInfo{
+    flex-direction: row;
+    /* align-items: flex-end */
+  }
+
+  .crewDetails{
+    flex-direction: column;
+    width: 80%;
+    
+  }
+
+  .dots{
+    justify-content: flex-start;
+    margin-top: 90px;
+  }
+
+  .dots li {
+    width: 20px;
+    height: 20px;
+  }
+
+  .aboutCrewMember{
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .nameAndOccupation h2{
+    font-size: 32px;
+  }
+
+  .aboutCrewMember p{
+    font-size: 18px;
+  }
+
+  .imageContainer{
+    width: 500px;
+    height: 500px;
+  }
+}

@@ -1,0 +1,185 @@
+.container{
+  width: 100%;
+  border: 2px hidden red;
+}
+
+.header{
+  width: 90%;
+  display: flex;
+  border: 1px hidden green;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  padding: 15px 0 0;
+
+}
+
+.logoAndHamburer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.linethrough{
+  display: none;
+}
+
+.hamburgerIcon{
+  width: 50%;
+  border: 2px hidden blue;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.hamburger,.closeIcon{
+  width: 25px;
+  height: 25px;
+  border: 2px hidden red;
+  
+}
+
+.nav{
+  width: 100%;
+  margin: 20px 0;
+  border: 2px hidden white;
+  background-color: rgba(255,255,255,0.1);
+  padding: 15px 0;
+}
+
+.navigation{
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navLink{
+  margin: 15px 10px 15px ;
+  font-size: 1.25rem;
+  font-family: 'Bebas Neue', cursive;
+  word-spacing: 5px;
+  letter-spacing: 1.5px;
+
+}
+
+.navLink:first-child{
+  margin-top: 20px;
+}
+
+.navLink a{
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+
+@media(max-width: 777px){
+  .nav{
+    transform: translateX(-1000px);
+    transition: 0.5s linear;
+    /* display: none; */
+    height: 0;
+  }
+
+  .show.nav{
+    /* display: block; */
+    height: 100%;
+    transform: translateX(0);
+
+  }
+}
+
+
+@media(min-width: 778px){
+  .header{
+    width: 100%;
+    flex-direction: row;
+    padding: 0px 0 0 ;
+  }
+
+  .logo{
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoAndHamburer{
+    width: 50%;
+    margin-left: 40px;
+  }
+
+  .hamburgerIcon{
+    display: none;
+  }
+
+  .nav{
+    margin: 0;
+    padding: 10px 0 0;
+  }
+
+  .navigation{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navLink {
+    margin: 15px 20px 0px ;
+    font-size: 1rem;
+    padding-bottom: 15px;
+  
+  }
+
+  .navLink:first-child {
+    margin-top: 15px;
+  }
+
+  .navLink a {
+    font-weight: 500;
+  }
+
+  .navLink.active{
+    border-bottom: 2px solid white;
+    transition: border 0.5s linear;
+  }
+  
+}
+
+@media(min-width: 992px) {
+
+  .logoAndHamburer {
+    width: 60%;
+    border: 2px hidden blue;
+  }
+
+  .linethrough {
+    display: inline-block;
+    width: 80%;
+    height: 2px;
+    background-color: rgba(255,255,255,0.1);
+    margin-right: -3rem;
+  }
+
+
+
+  .nav {
+    padding: 15px 0 0;
+  }
+
+  .navLink {
+    font-size: 1.15rem;
+
+  }
+
+}
